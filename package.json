@@ -1,0 +1,49 @@
+{
+  "name": "vue-h5-vant",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vant": "^2.12.10",
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/cli-service": "^4.5.11",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "chalk": "^2.3.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "http-mockjs": "^4.6.2",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.2.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommitMsg.js"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint --mode production",
+      "git add"
+    ]
+  }
+}
