@@ -30,7 +30,7 @@ request.interceptors.response.use(
       // 未登录的处理
     } else if (/^(11[0-9]{2})$/.test(res.code)) {
       // Message方式的提示
-      Notify({type:'danger',message:res.message});
+      Notify({ type: 'danger', message: res.message });
     } else if (/^(12[0-9]{2})$/.test(res.code)) {
       // Dialog方式的提示
       Dialog.alert({ title: '提示', message: res.message });
@@ -40,7 +40,7 @@ request.interceptors.response.use(
   (error) => {
     // 请求异常时的处理
     if (error.message) {
-      Notify({type:'danger',message:error.message});
+      Notify({ type: 'danger', message: error.message });
     }
     return Promise.reject(error);
   }

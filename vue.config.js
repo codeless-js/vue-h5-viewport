@@ -14,5 +14,7 @@ module.exports = {
       mocker(app);
     },
   },
+  transpileDependencies: ['vant'],
   lintOnSave: false,
+  productionSourceMap: false,
 };

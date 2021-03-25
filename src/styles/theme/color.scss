@@ -1,0 +1,65 @@
+/* 背景颜色 */
+.c-bg-lightgrey{
+  background-color: #ddd;
+}
+/* 图标颜色 */
+.c-success {
+  color: $successColor;
+}
+/* 图标颜色 */
+.c-light_success {
+  // color: #34b65e;
+  color: #5dc67f;
+}
+.c-error {
+  color: $errorColor;
+}
+.c-warning {
+  color: $warningColor;
+}
+.c-primary {
+  color: $primaryColor;
+}
+.c-dark_primary {
+  color: #2b85e4;
+}
+.c-grey {
+  color: #a9b6bd;
+}
+.c-lightgrey{
+  color: #ddd;
+}
+.c-deepgrey{
+  color: #999;
+}
+.c-subsidiary {
+  color: $subsidiaryColor;
+}
+.c-processing {
+  animation: twinkleProcessing 1.6s infinite;
+}
+.c-deplying {
+  animation: twinkleDeplying 1.6s infinite;
+}
+@keyframes twinkleProcessing {
+  0% {
+    color: #EEEEEE
+  }
+  50% {
+    color: #ff9900;
+  }
+  100%{
+    color: #EEEEEE
+  }
+}
+@keyframes twinkleDeplying {
+  0% {
+    background-color: #EEEEEE
+  }
+  50% {
+    background-color: #ff9900;
+  }
+  100%{
+    background-color: #EEEEEE
+  }  
+}

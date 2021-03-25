@@ -1,0 +1,13 @@
+@import './func.css';
+@import './theme/color.scss';
+
+html,
+body .app {
+  color: #333333;
+  font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  background-color: $backgroundColor;
+}
+
+.app-container {
+  padding-bottom: 50px;
+}
